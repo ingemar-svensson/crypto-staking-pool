@@ -117,7 +117,6 @@ describe("StakingPool", function () {
     expect(poolStats[5]).to.equal(100);
   });
 
-
   it("Should find some view data", async function () {
     await stakingPool.addAssets(1000);
     for(let i = 0; i < 10; i++) {

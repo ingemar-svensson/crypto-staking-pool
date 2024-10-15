@@ -72,7 +72,7 @@ contract StakingPool {
     function stake(uint256 amount) external {
         require(amount > 0, "Cannot stake 0 tokens");
 
-        asset.transferFrom(msg.sender, address(this), amount);
+        token.transferFrom(msg.sender, address(this), amount);
 
         stakes[msg.sender].balance += amount;
         stakes[msg.sender].transactions.push(Transaction({
@@ -103,7 +103,7 @@ contract StakingPool {
         }));
         totalStaked -= amount;
 
-        asset.transfer(msg.sender, amount);
+        token.transfer(msg.sender, amount);
 
         uint256 yieldAfter = this.calculateStakeYield(msg.sender);
         uint256 yieldToWithdraw = yieldBefore - yieldAfter;
