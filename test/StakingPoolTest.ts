@@ -5,7 +5,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import chai from "chai";
 import sinonChai from "sinon-chai";
-import { StakingPool } from "../typechain-types/contracts/StakingPool";
+import { StakingPool } from "../typechain-types/StakingPool";
 import { time } from "@nomicfoundation/hardhat-network-helpers";
 
 chai.should();
@@ -119,7 +119,7 @@ describe("StakingPool", function () {
 
 
   it("Should find some view data", async function () {
-    await stakingPool.addCarbonCredits(1000);
+    await stakingPool.addAssets(1000);
     for(let i = 0; i < 10; i++) {
       await stakingPool.connect(addr1).stake(i + 1);
     }
