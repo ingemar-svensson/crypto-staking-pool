@@ -1,4 +1,4 @@
-# Carbon Earth Staking
+# A Simple ERC20 Staking Pool
 
 This is a staking pool implementation. Yield is calculated with a daycount convention.
 
