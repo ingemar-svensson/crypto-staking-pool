@@ -1,0 +1,22 @@
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+ignition/deployments/chain-11155111/artifacts/StakingPoolModule\#StakingPool.dbg.json
+ignition/deployments/chain-11155111/artifacts/StakingPoolModule\#StakingPool.json
+ignition/deployments/chain-11155111/build-info/2024998db67cfbf3049052c902463af5.json
+ignition/deployments/chain-11155111/journal.jsonl
+ignition/deployments/chain-11155111/journal.jsonl
